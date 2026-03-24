@@ -1,1 +1,16 @@
-<p>header works!</p>
+<header class="header-main" role="banner">
+  <div class="header-main__content container">
+    <a class="header-main__link header-main__link--logo">
+      <img src="/assets/images/vector/logo.svg" width="287" height="78" alt="Логотип компании">
+    </a>
+    <nav class="header-main__nav" role="Основная навигация по сайту">
+      <ul class="header-main__list-nav">
+        @for (link of links; track link.text) {
+          <li>
+            <app-link [link]="link"/>
+          </li>
+        }
+      </ul>
+    </nav>
+  </div>
+</header>

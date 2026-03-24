@@ -1,9 +1,17 @@
 // ==== COLORS ==== //
 
+$white: rgb(255, 255, 255);
 $dark-indigo: rgb(53, 80, 112);
 $plum: rgb(109, 89, 122);
 $rose-taupe: rgb(181, 101, 118);
 $coral-red: rgb(229, 107, 111);
 $peach: rgb(234, 172, 139);
+$blue-gray: rgb(68, 99, 129);
+
+/* link */
+$link-text: $blue-gray;
+$link-button: $white;
 
 // ==== TYPOGRAPHY ==== //
+
+$font-family-primary: "Josefin", sans-serif;

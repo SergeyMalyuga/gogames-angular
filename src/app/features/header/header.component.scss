@@ -1,1 +1,17 @@
 @use '../../../styles/variables' as variables;
+
+.header-main {
+  padding: 20px 0 70px;
+
+  &__link {
+    text-decoration: none;
+
+    &--logo {
+      display: block;
+
+      img {
+        display: block;
+      }
+    }
+  }
+}

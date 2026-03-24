@@ -23,6 +23,9 @@ html {
 body {
   margin: 0;
   height: 100%;
+  font-family: variables.$font-family-primary;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .container {
