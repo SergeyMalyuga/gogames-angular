@@ -1,0 +1,16 @@
+@use '../../../../styles/variables' as variables;
+
+.link {
+  text-decoration: none;
+  font-family: variables.$font-family-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+
+  &--text {
+    color: variables.$link-text;
+  }
+}
