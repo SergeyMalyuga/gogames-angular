@@ -25,6 +25,13 @@ body {
   height: 100%;
 }
 
+.container {
+  max-width: 1199px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
