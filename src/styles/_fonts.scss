@@ -1,16 +1,14 @@
 @font-face {
-  font-family: "Josefin Sans";
-  use: url('/assets/fonts/josefin-sans-regular.woff2') format('woff2'),
-  url('/assets/fonts/josefin-sans-regular.woff') format('woff'),
-  url('/assets/fonts/josefin-sans-regular.ttf') format('truetype');
+  font-family: "Josefin";
+  src: url('/assets/fonts/josefin-sans-medium.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 };
 
 @font-face {
-  font-family: "Josefin Sans";
-  use: url('/assets/fonts/josefin-sans-bold.woff2') format('woff2'),
+  font-family: "Josefin";
+  src: url('/assets/fonts/josefin-sans-bold.woff2') format('woff2'),
   url('/assets/fonts/josefin-sans-bold.woff') format('woff'),
   url('/assets/fonts/josefin-sans-bold.ttf') format('truetype');
   font-style: normal;
