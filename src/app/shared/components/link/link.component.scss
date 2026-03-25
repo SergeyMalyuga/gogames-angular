@@ -13,4 +13,15 @@
   &--text {
     color: variables.$link-text;
   }
+
+  &--button {
+    display: block;
+    border-radius: 25px;
+    padding: 13px 0;
+    text-align: center;
+    background: linear-gradient(
+        136.59deg,
+        variables.$ocean-blue 17%,
+        variables.$lavender 88%);
+  }
 }
