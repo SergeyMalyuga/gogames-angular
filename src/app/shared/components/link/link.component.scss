@@ -9,6 +9,7 @@
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
+  cursor: pointer;
 
   &--text {
     color: variables.$link-text;
@@ -19,7 +20,6 @@
     border-radius: 25px;
     padding: 13px 0;
     text-align: center;
-    cursor: pointer;
     background: linear-gradient(
         to right,
         variables.$ocean-blue,
