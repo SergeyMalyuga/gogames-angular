@@ -52,10 +52,14 @@
         variables.$ocean-blue,
         variables.$ocean-blue,
         variables.$lavender) right  / 200% auto;
-    transition: background-position 0.5s ease;
+    transition: background-position 0.5s ease, opacity 0.5s ease;
 
     &:hover {
     background-position: left;
+    }
+
+    &:active {
+      opacity: 0.7;
     }
   }
 }
