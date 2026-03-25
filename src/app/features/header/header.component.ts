@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import {links} from './data/links.data';
+import {LINKS} from './data/links.data';
 import {LinkComponent} from '../../shared/components/link/link.component';
 
 @Component({
@@ -12,5 +12,5 @@ import {LinkComponent} from '../../shared/components/link/link.component';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
-  protected readonly links = links;
+  protected readonly LINKS_DATA = LINKS;
 }

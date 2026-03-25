@@ -5,12 +5,19 @@
     </a>
     <nav class="header-main__nav" role="Основная навигация по сайту">
       <ul class="header-main__list-nav">
-        @for (link of links; track link.text) {
+        @for (link of LINKS_DATA.text; track link.text) {
           <li>
             <app-link [link]="link"/>
           </li>
         }
       </ul>
     </nav>
+    <ul class="header-main__list-actions">
+      @for (link of LINKS_DATA.button; track link.text) {
+        <li>
+          <app-link class="header-main__link header-main__link--button" [link]="link"/>
+        </li>
+      }
+    </ul>
   </div>
 </header>
