@@ -12,7 +12,29 @@
   cursor: pointer;
 
   &--text {
+    position: relative;
     color: variables.$link-text;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(
+          to right,
+          variables.$ocean-blue,
+          variables.$lavender);
+      transition: width 0.5s ease;
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
   }
 
   &--button {
