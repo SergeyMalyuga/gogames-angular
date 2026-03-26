@@ -3,12 +3,12 @@
     <div class="hero__wrapper-info">
       <h2 class="hero__title section-title">Gaming Consoles</h2>
       <p class="hero__subtitle section-subtitle">Try It, Rent It, <span>Save $50!</span></p>
-      <p class="hero__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking
+      <p class="hero__text section-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking
         at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as
         opposed.</p>
     </div>
     @for (link of LINKS_DATA.button; track link) {
-      <app-link [link]="link"/>
+      <app-link class="hero__link" [link]="link"/>
     }
   </div>
 </section>

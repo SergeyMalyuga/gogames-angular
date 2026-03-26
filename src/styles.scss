@@ -49,12 +49,21 @@ body {
   font-size: 68px;
   font-weight: 700;
   line-height: 75px;
-  letter-spacing: 0%;
   text-align: left;
 
   span {
     color: variables.$subtitle-text-accent;
   }
+}
+
+.section-text {
+  max-width: 518px;
+  width: 100%;
+  color: variables.$lavender-gray;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: left;
+  margin-bottom: 29px;
 }
 
 .visually-hidden {
