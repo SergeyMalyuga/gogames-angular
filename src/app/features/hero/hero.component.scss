@@ -1,1 +1,8 @@
 @use '../../../styles/variables' as variables;
+
+.hero {
+  background-image: url("/assets/images/raster/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
