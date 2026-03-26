@@ -6,9 +6,16 @@
       <p class="hero__text section-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking
         at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as
         opposed.</p>
+      @for (link of LINKS_DATA.button; track link) {
+        <app-link class="hero__link" [link]="link"/>
+      }
     </div>
-    @for (link of LINKS_DATA.button; track link) {
-      <app-link class="hero__link" [link]="link"/>
-    }
+    <div class="hero__wrapper-offers">
+      <div class="hero__wrapper-image">
+        <img src="/assets/images/raster/hero-circle.png" width="519" height="469" alt="">
+        <img class="hero__image-character" src="/assets/images/raster/hero-character.png" width="543" height="585" alt="">
+        <img class="hero__image-rays" src="/assets/images/raster/hero-rays.png" width="473" height="123" alt="">
+      </div>
+    </div>
   </div>
 </section>
