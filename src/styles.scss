@@ -44,6 +44,19 @@ body {
   text-align: left;
 }
 
+.section-subtitle {
+  color: variables.$subtitle-text-main;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: 0%;
+  text-align: left;
+
+  span {
+    color: variables.$subtitle-text-accent;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
