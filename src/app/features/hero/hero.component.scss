@@ -1,6 +1,7 @@
 @use '../../../styles/variables' as variables;
 
 .hero {
+  padding: 145px 0 98px;
   background-image: url("/assets/images/raster/hero-bg.jpg");
   background-size: cover;
   background-position: center;
