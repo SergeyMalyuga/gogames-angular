@@ -1,9 +1,33 @@
 @use '../../../styles/variables' as variables;
 
 .hero {
-  padding: 145px 0 98px;
+  padding: 237px 0 92px;
   background-image: url("/assets/images/raster/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 26px;
+    width: max-content;
+
+    &::before, &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 29px;
+      background-image: url("/assets/images/raster/hero-arrows.png");
+    }
+
+    &::before {
+      order: 1;
+    }
+
+    &::after {
+      order: 2;
+    }
+  }
 }

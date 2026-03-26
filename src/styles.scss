@@ -35,6 +35,15 @@ body {
   margin: 0 auto;
 }
 
+.section-title {
+  color: variables.$title-text;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
