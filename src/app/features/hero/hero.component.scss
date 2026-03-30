@@ -1,7 +1,7 @@
 @use '../../../styles/variables' as variables;
 
 .hero {
-  padding: 237px 0 92px;
+  padding: 165px 0 92px;
   background-image: url("/assets/images/raster/hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -11,11 +11,21 @@
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 32px;
+
+    @media (width <= 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__wrapper {
     &-info {
       position: relative;
+
+      @media (width <= 768px) {
+        order: 1;
+      }
     }
 
     &-offers {
@@ -24,14 +34,14 @@
       position: relative;
       gap: 30px;
 
-      &::after {
-        content: '';
-        width: 123px;
-        height: 109px;
-        background-image: url("/assets/images/vector/hero-dots.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
+      @media (width <= 400px) {
+        gap: 15px;
+      }
+
+      @media (width <= 768px) {
+        max-width: 400px;
+        width: 100%;
+        order: 0;
       }
     }
 
@@ -80,6 +90,12 @@
     &::after {
       order: 2;
     }
+
+    @media (width <= 360px) {
+      &::after {
+        content: none;
+      }
+    }
   }
 
   &__subtitle {
@@ -97,21 +113,33 @@
 
   &__image {
     &-character {
+      position: relative;
+      left: 0;
+      bottom: -8px;
+      animation: show-character 1.5s cubic-bezier(0.7, 0, 0.3, 1);
+      z-index: 3;
+    }
+
+    &-circle {
       position: absolute;
       bottom: 0;
       left: 0;
-      animation: show-character 1.5s cubic-bezier(0.7, 0, 0.3, 1);
-      z-index: 200;
+      z-index: -1;
     }
 
     &-rays {
       position: absolute;
-      top: -1vw;
+        top: 3vw;
       left: 3vh;
       opacity: 0;
       animation: show-rays 1.5s 1.5s cubic-bezier(0.7, 0, 0.3, 1);
       animation-fill-mode: forwards;
       z-index: 1;
+
+      @media (width <= 768px) {
+        top: 6vw;
+        left: 2vh;
+      }
     }
   }
 
@@ -121,15 +149,30 @@
     height: clamp(4.25rem, -0.5357rem + 9.9702vw, 8.4375rem);
 
     &--vr {
-      left: -5vw;
-      top: -60px;
+      left: -2vw;
+      top: -40px;
       z-index: 10;
     }
 
     &--dualshock {
-      right: -5vh;
+      right: -5vw;
       bottom: -20px;
       z-index: 300;
+
+      @media (width <= 768px) {
+        right: -25%;
+      }
+    }
+  }
+
+  &__dots {
+    max-width: clamp(3.875rem, -0.4821rem + 9.0774vw, 7.6875rem);
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
   }
 }
