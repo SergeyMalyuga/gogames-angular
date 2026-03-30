@@ -21,6 +21,18 @@
     &-offers {
       display: flex;
       align-items: center;
+      position: relative;
+      gap: 30px;
+
+      &::after {
+        content: '';
+        width: 123px;
+        height: 109px;
+        background-image: url("/assets/images/vector/hero-dots.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
     }
 
     &-image {
@@ -38,8 +50,12 @@
   &__decoration {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -10%;
     animation: cross-rotation 10s infinite linear;
+
+    @media (width <= 1024px) {
+      display: none;
+    }
   }
 
   &__title {
@@ -67,8 +83,10 @@
   }
 
   &__subtitle {
+    font-size: clamp(30px, 5.5vw, 68px);
     max-width: 460px;
     width: 100%;
+    line-height: 110%;
     margin-bottom: 31px;
   }
 
@@ -96,6 +114,24 @@
       z-index: 1;
     }
   }
+
+  &__offer {
+    position: absolute;
+    width: clamp(7.875rem, -1.125rem + 18.75vw, 15.75rem);
+    height: clamp(4.25rem, -0.5357rem + 9.9702vw, 8.4375rem);
+
+    &--vr {
+      left: -5vw;
+      top: -60px;
+      z-index: 10;
+    }
+
+    &--dualshock {
+      right: -5vh;
+      bottom: -20px;
+      z-index: 300;
+    }
+  }
 }
 
 @keyframes show-character {
@@ -121,7 +157,7 @@
 }
 
 @keyframes cross-rotation {
-  from{
+  from {
     transform: rotate(0deg);
   }
   to {
