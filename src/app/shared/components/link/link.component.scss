@@ -40,6 +40,10 @@
     &:active {
       color: variables.$link-text-active;
     }
+
+    @media (width <= 960px) {
+      font-size: 30px;
+    }
   }
 
   &--button {
