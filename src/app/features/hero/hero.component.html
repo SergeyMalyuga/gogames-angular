@@ -6,9 +6,12 @@
       <p class="hero__text section-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking
         at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as
         opposed.</p>
-      @for (link of LINKS_DATA.button; track link) {
+      @for (link of LINKS_DATA.button; track link.text) {
         <app-link class="hero__link" [link]="link"/>
       }
+      <div class="hero__decoration" role="presentation">
+        <img src="/assets/images/vector/hero-cross.svg" width="118" height="118" alt="">
+      </div>
     </div>
     <div class="hero__wrapper-offers">
       <div class="hero__wrapper-image">
