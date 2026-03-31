@@ -72,7 +72,6 @@
     display: flex;
     align-items: center;
     gap: 25px;
-    margin-bottom: 26px;
     width: max-content;
 
     &::before, &::after {
@@ -96,14 +95,6 @@
         content: none;
       }
     }
-  }
-
-  &__subtitle {
-    font-size: clamp(30px, 5.5vw, 68px);
-    max-width: 460px;
-    width: 100%;
-    line-height: 110%;
-    margin-bottom: 31px;
   }
 
   &__link {

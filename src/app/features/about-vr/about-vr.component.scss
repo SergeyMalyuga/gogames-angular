@@ -48,6 +48,12 @@
     }
   }
 
+  &__link {
+    display: block;
+    max-width: 207px;
+    width: 100%;
+  }
+
   @media (width <= 768px) {
     padding-top: 50px;
   }

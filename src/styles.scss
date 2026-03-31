@@ -42,14 +42,18 @@ body {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
+  margin-bottom: 26px;
 }
 
 .section-subtitle {
   color: variables.$subtitle-text-main;
-  font-size: 68px;
   font-weight: 700;
-  line-height: 75px;
   text-align: left;
+  font-size: clamp(30px, 5.5vw, 68px);
+  max-width: 460px;
+  width: 100%;
+  line-height: 110%;
+  margin-bottom: 31px;
 
   span {
     color: variables.$subtitle-text-accent;
