@@ -1,1 +1,11 @@
 @use '../../../styles/variables' as variables;
+
+.about-vr {
+  padding-top: 130px;
+  padding-bottom: 50px;
+  background-image: url('/assets/images/raster/about-vr-kerfin.png'),
+  url('/assets/images/raster/about-vr-bg.jpg');
+  background-position: top 50px right -27%, center;
+  background-size: 35%, cover;
+  background-repeat: no-repeat;
+}
