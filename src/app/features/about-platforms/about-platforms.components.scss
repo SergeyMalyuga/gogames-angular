@@ -1,1 +1,9 @@
 @use '../../../styles/variables' as variables;
+
+.about-platforms {
+  padding: 67px 0 92px;
+  background-image: url("/assets/images/raster/about-platforms-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
