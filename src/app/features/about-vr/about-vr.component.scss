@@ -4,8 +4,61 @@
   padding-top: 130px;
   padding-bottom: 50px;
   background-image: url('/assets/images/raster/about-vr-kerfin.png'),
+  url('/assets/images/raster/about-vr-text.png'),
   url('/assets/images/raster/about-vr-bg.jpg');
-  background-position: top 50px right -27%, center;
-  background-size: 35%, cover;
+  background-position: top 50px right -27%, right 15% bottom 50px, center;
+  background-size: 35%, 35%, cover;
   background-repeat: no-repeat;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+
+    @media (width <= 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__wrapper {
+    &-image {
+      position: relative;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    &--screen {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform-origin: top left;
+      animation: flying 3.3s linear infinite;
+      z-index: -1;
+
+      @media (width <= 1025px) {
+        max-width: 50%;
+      }
+    }
+  }
+
+  @media (width <= 768px) {
+    padding-top: 50px;
+  }
+}
+
+@keyframes flying {
+  0%, 100% {
+    transform: scale(0.87) translateY(0);
+  }
+
+  50% {
+    transform: scale(0.87) translateY(5%);
+  }
 }

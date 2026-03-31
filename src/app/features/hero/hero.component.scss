@@ -175,6 +175,10 @@
       height: auto;
     }
   }
+
+  @media (width <= 768px) {
+    padding-bottom: 50px;
+  }
 }
 
 @keyframes show-character {
