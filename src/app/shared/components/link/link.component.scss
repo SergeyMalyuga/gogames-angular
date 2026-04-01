@@ -56,10 +56,11 @@
         variables.$ocean-blue,
         variables.$ocean-blue,
         variables.$lavender) right  / 200% auto;
-    transition: background-position 0.5s ease, opacity 0.5s ease;
+    transition: background-position 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
 
     &:hover {
     background-position: left;
+      box-shadow: 0 3px 10px 0 #9b9b9b;
     }
 
     &:active {
