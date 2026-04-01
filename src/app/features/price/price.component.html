@@ -1,4 +1,13 @@
 <section class="price">
   <h2 class="price__title section-title">Our Pricing</h2>
   <p class="price__subtitle section-subtitle">Choose Your Plan</p>
+  <div class="price__content container">
+    <ul class="price__list-plans">
+      @for (card of CARDS; track card.title) {
+        <li>
+          <app-plan-card [card]="card"/>
+        </li>
+      }
+    </ul>
+  </div>
 </section>

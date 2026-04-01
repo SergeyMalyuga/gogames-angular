@@ -3,6 +3,7 @@
 // Base colors
 $white: rgb(255, 255, 255);
 $cream: rgb(255, 230, 215);
+$peach-soft: rgb(251, 218, 207);
 
 // Dark colors
 $dark-indigo: rgb(53, 80, 112);
@@ -34,6 +35,11 @@ $subtitle-text-accent: $blue-gray;
 
 /* background */
 $bg-main: $cream;
+
+/* card */
+$plan-card-bg: $peach-soft;
+$plan-card-title: $blue-gray;
+$plan-card-subtitle: $apricot;
 
 // ==== TYPOGRAPHY ==== //
 
