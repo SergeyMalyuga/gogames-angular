@@ -26,6 +26,12 @@
       position: relative;
       width: 100%;
       z-index: 1;
+
+      @media (width <= 768px) {
+        max-width: 400px;
+        width: 100%;
+        align-self: center;
+      }
     }
   }
 
@@ -59,12 +65,3 @@
   }
 }
 
-@keyframes flying {
-  0%, 100% {
-    transform: scale(0.87) translateY(0);
-  }
-
-  50% {
-    transform: scale(0.87) translateY(5%);
-  }
-}
