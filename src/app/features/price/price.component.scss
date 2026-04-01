@@ -1,0 +1,18 @@
+@use '../../../styles/variables' as variables;
+
+.price {
+  padding: 48px 0 73px;
+  background-color: variables.$bg-main;
+
+  &__title, &__subtitle {
+    text-align: center;
+  }
+
+  &__subtitle {
+    max-width: 100%;
+  }
+
+  @media (width <= 768px) {
+    padding: 50px 0;
+  }
+}
