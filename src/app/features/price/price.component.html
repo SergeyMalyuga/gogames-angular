@@ -5,7 +5,7 @@
     <ul class="price__list-plans">
       @for (card of CARDS; track card.title) {
         <li>
-          <app-plan-card [card]="card" [activeCard]="activeCard()"/>
+          <app-plan-card [card]="card" [activeCard]="activeCard()" (clicked)="changeActiveCard($event)"/>
         </li>
       }
     </ul>

@@ -15,4 +15,12 @@ import {PlanCardModel} from '../../core/models/plan-card.model';
 export class PriceComponent {
   public CARDS = PLAN_CARDS;
   public activeCard = signal<PlanCardModel | null>(null);
+
+  public changeActiveCard(card: PlanCardModel): void {
+    if (this.activeCard()?.title === card.title) {
+      this.activeCard.set(null);
+    } else {
+      this.activeCard.set(card);
+    }
+  }
 }
