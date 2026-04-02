@@ -17,19 +17,62 @@
   }
 
   &__price {
+    display: block;
     color: variables.$plan-card-subtitle;
     font-size: 50px;
     font-weight: 700;
-    line-height: 50px;
-    letter-spacing: 0%;
     text-align: left;
+    margin-bottom: 28px;
+
+    @media (width <= 1109px) {
+      font-size: clamp(1.125rem, -1.7022rem + 5.8824vw, 2.375rem);
+    }
+
+    @media (width <= 768px) {
+      font-size: 50px;
+    }
   }
 
   &__currency {
     font-size: 30px;
+
+    @media (width <= 1109px) {
+      font-size: clamp(0.9375rem, 0.2307rem + 1.4706vw, 1.25rem);
+    }
+
+    @media (width <= 768px) {
+      font-size: 30px;
+    }
   }
 
   &__per {
     font-size: 18px;
+  }
+
+  &__benefit {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: variables.$plan-card-text-main;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 30px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 10px;
+      background-color: variables.$checkmark-bg;
+      mask-image: url("/assets/images/vector/price-checmark.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: cover;
+    }
+
+    &:last-of-type {
+      margin-bottom: 65px;
+    }
   }
 }
