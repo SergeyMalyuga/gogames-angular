@@ -14,6 +14,7 @@ import {LinkComponent} from '../link/link.component';
 })
 export class PlanCard {
   @Input({required: true}) card!: PlanCardModel;
+  @Input({required: true}) activeCard!: PlanCardModel | null;
 
   public LINKS_DATA = PLAN_LINKS;
 }

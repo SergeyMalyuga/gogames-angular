@@ -1,6 +1,7 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {ChangeDetectionStrategy, Component, signal} from '@angular/core';
 import {PLAN_CARDS} from '../../shared/data/plan-cards.data';
 import {PlanCard} from '../../shared/components/plan-card/plan-card';
+import {PlanCardModel} from '../../core/models/plan-card.model';
 
 @Component({
   selector: 'app-price',
@@ -13,4 +14,5 @@ import {PlanCard} from '../../shared/components/plan-card/plan-card';
 })
 export class PriceComponent {
   public CARDS = PLAN_CARDS;
+  public activeCard = signal<PlanCardModel | null>(null);
 }
