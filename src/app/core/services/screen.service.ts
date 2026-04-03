@@ -1,4 +1,5 @@
-import {Injectable, signal} from '@angular/core';
+import {inject, Injectable, signal} from '@angular/core';
+import {BodyService} from './body.service';
 
 @Injectable({
   providedIn: 'root'

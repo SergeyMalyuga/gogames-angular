@@ -78,6 +78,10 @@ body {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 @keyframes flying {
   0%, 100% {
     transform: scale(0.87) translateY(0);
