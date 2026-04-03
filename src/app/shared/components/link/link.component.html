@@ -1,4 +1,8 @@
-<a [ngClass]="{
-'link': true,
-'link--text': link.type === LinkType.TEXT,
-'link--button': link.type === LinkType.BUTTON}">{{link.text}}</a>
+<a
+  [ngClass]="{
+    link: true,
+    'link--text': link.type === LinkType.TEXT,
+    'link--button': link.type === LinkType.BUTTON,
+  }"
+  >{{ link.text }}</a
+>

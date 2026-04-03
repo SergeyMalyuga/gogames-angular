@@ -2,7 +2,7 @@
 
 .hero {
   padding: 165px 0 92px;
-  background-image: url("/assets/images/raster/hero-bg.jpg");
+  background-image: url('/assets/images/raster/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,12 +74,13 @@
     gap: 25px;
     width: max-content;
 
-    &::before, &::after {
-      content: "";
+    &::before,
+    &::after {
+      content: '';
       display: block;
       width: 50px;
       height: 29px;
-      background-image: url("/assets/images/raster/hero-arrows.png");
+      background-image: url('/assets/images/raster/hero-arrows.png');
     }
 
     &::before {
@@ -120,7 +121,7 @@
 
     &-rays {
       position: absolute;
-        top: 3vw;
+      top: 3vw;
       left: 3vh;
       opacity: 0;
       animation: show-rays 1.5s 1.5s cubic-bezier(0.7, 0, 0.3, 1);

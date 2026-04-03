@@ -2,22 +2,49 @@
   <div class="about-platforms__content container">
     <div class="about-platforms__wrapper-info">
       <h2 class="section-title">About XBOX, PS</h2>
-      <p class="section-subtitle about-platforms__subtitle ">The New Xbox, Ps Series</p>
-      <p class="section-text">It is a long established fact that a reader will be distracted
-        by the readable content of a page when looking at its layout.
-        The point of using Lorem Ipsum is that it has a more-or-less normal
-        distribution of letters as opposed.</p>
+      <p class="section-subtitle about-platforms__subtitle">The New Xbox, Ps Series</p>
+      <p class="section-text">
+        It is a long established fact that a reader will be distracted by the readable content of a
+        page when looking at its layout. The point of using Lorem Ipsum is that it has a
+        more-or-less normal distribution of letters as opposed.
+      </p>
       @for (link of LINKS_DATA.button; track link.text) {
-        <app-link class="about-platforms__link" [link]="link"/>
+        <app-link class="about-platforms__link" [link]="link" />
       }
     </div>
     <div class="about-platforms__wrapper-decorations">
-      <img class="about-platforms__image about-platforms__image--decor"
-           src="/assets/images/raster/about-platforms-decor-bg.png" width="557" height="567" alt="" loading="lazy">
-      <img class="about-platforms__image about-platforms__image--gamepad"
-           src="/assets/images/raster/about-platforms-gamepad.png" width="523" height="419" alt="" loading="lazy">
-    <img class="about-platforms__image--gear-big" src="/assets/images/vector/about-platforms-gear-big.svg" width="136" height="136" alt="" loading="lazy">
-    <img class="about-platforms__image--gear-small" src="/assets/images/vector/about-platforms-gear-small.svg" width="83" height="83" alt="" loading="lazy">
+      <img
+        class="about-platforms__image about-platforms__image--decor"
+        src="/assets/images/raster/about-platforms-decor-bg.png"
+        width="557"
+        height="567"
+        alt=""
+        loading="lazy"
+      />
+      <img
+        class="about-platforms__image about-platforms__image--gamepad"
+        src="/assets/images/raster/about-platforms-gamepad.png"
+        width="523"
+        height="419"
+        alt=""
+        loading="lazy"
+      />
+      <img
+        class="about-platforms__image--gear-big"
+        src="/assets/images/vector/about-platforms-gear-big.svg"
+        width="136"
+        height="136"
+        alt=""
+        loading="lazy"
+      />
+      <img
+        class="about-platforms__image--gear-small"
+        src="/assets/images/vector/about-platforms-gear-small.svg"
+        width="83"
+        height="83"
+        alt=""
+        loading="lazy"
+      />
     </div>
   </div>
 </section>

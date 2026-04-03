@@ -2,6 +2,8 @@
 
 .footer {
   background-color: variables.$bg-main;
+  padding: 25px 0;
+  border: 1.5px solid brown;
 
   &__content {
     display: flex;
@@ -27,7 +29,6 @@
       order: 1;
       margin: 0 auto;
       text-align: center;
-
     }
 
     @media (width <= 768px) {
@@ -56,7 +57,9 @@
       height: 40px;
       color: variables.$link-text;
       background-color: variables.$link-bg;
-      transition: background-color 0.5s ease, color 0.5s ease;
+      transition:
+        background-color 0.5s ease,
+        color 0.5s ease;
 
       svg {
         display: block;

@@ -1,8 +1,7 @@
-import {inject, Injectable, signal} from '@angular/core';
-import {BodyService} from './body.service';
+import { Injectable, signal } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ScreenService {
   private mediaQuery = window.matchMedia('(max-width: 960px)');

@@ -1,13 +1,11 @@
-import {ChangeDetectionStrategy, Component, signal} from '@angular/core';
-import {PLAN_CARDS} from '../../shared/data/plan-cards.data';
-import {PlanCard} from '../../shared/components/plan-card/plan-card';
-import {PlanCardModel} from '../../core/models/plan-card.model';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { PLAN_CARDS } from '../../shared/data/plan-cards.data';
+import { PlanCard } from '../../shared/components/plan-card/plan-card';
+import { PlanCardModel } from '../../core/models/plan-card.model';
 
 @Component({
   selector: 'app-price',
-  imports: [
-    PlanCard
-  ],
+  imports: [PlanCard],
   templateUrl: './price.component.html',
   styleUrl: './price.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

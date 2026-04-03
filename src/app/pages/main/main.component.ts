@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import {HeaderComponent} from '../../features/header/header.component';
-import {HeroComponent} from '../../features/hero/hero.component';
-import {AboutVrComponent} from '../../features/about-vr/about-vr.component';
-import {AboutPlatformsComponents} from '../../features/about-platforms/about-platforms.components';
-import {PriceComponent} from '../../features/price/price.component';
-import {FooterComponent} from '../../features/footer/footer.component';
+import { HeaderComponent } from '../../features/header/header.component';
+import { HeroComponent } from '../../features/hero/hero.component';
+import { AboutVrComponent } from '../../features/about-vr/about-vr.component';
+import { AboutPlatformsComponents } from '../../features/about-platforms/about-platforms.components';
+import { PriceComponent } from '../../features/price/price.component';
+import { FooterComponent } from '../../features/footer/footer.component';
 
 @Component({
   selector: 'app-main',
@@ -14,7 +14,7 @@ import {FooterComponent} from '../../features/footer/footer.component';
     AboutVrComponent,
     AboutPlatformsComponents,
     PriceComponent,
-    FooterComponent
+    FooterComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

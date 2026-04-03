@@ -1,14 +1,18 @@
 <header class="header-main" role="banner">
   <div class="header-main__content container">
     <a class="header-main__link header-main__link--logo" href="/">
-      <img src="/assets/images/vector/logo.svg" width="287" height="78" alt="Логотип компании">
+      <img src="/assets/images/vector/logo.svg" width="287" height="78" alt="Логотип компании" />
     </a>
-    <div id="main-nav" class="header-main__wrapper-nav" [class.header-main__wrapper-nav--open]="isNavOpen() && screenService.isTablet()">
+    <div
+      id="main-nav"
+      class="header-main__wrapper-nav"
+      [class.header-main__wrapper-nav--open]="isNavOpen() && screenService.isTablet()"
+    >
       <nav class="header-main__nav" aria-label="Основная навигация по сайту">
         <ul class="header-main__list-nav">
           @for (link of LINKS_DATA.text; track link.text) {
             <li>
-              <app-link [link]="link"/>
+              <app-link [link]="link" />
             </li>
           }
         </ul>
@@ -16,19 +20,21 @@
       <ul class="header-main__list-actions">
         @for (link of LINKS_DATA.button; track link.text) {
           <li>
-            <app-link class="header-main__link header-main__link--button" [link]="link"/>
+            <app-link class="header-main__link header-main__link--button" [link]="link" />
           </li>
         }
       </ul>
     </div>
-    <button (click)="toggleNav()"
-            [attr.aria-expanded]="isNavOpen() && screenService.isTablet()"
-            aria-haspopup="true"
-            aria-controls="main-nav"
-            [attr.aria-label]="isNavOpen() ? 'Закрыть меню' : 'Открыть меню'"
-            class="header-main__burger"
-            [class.header-main__burger-open]="isNavOpen()"
-            type="button">
+    <button
+      (click)="toggleNav()"
+      [attr.aria-expanded]="isNavOpen() && screenService.isTablet()"
+      aria-haspopup="true"
+      aria-controls="main-nav"
+      [attr.aria-label]="isNavOpen() ? 'Закрыть меню' : 'Открыть меню'"
+      class="header-main__burger"
+      [class.header-main__burger-open]="isNavOpen()"
+      type="button"
+    >
       <span class="header-main__burger-line"></span>
     </button>
   </div>

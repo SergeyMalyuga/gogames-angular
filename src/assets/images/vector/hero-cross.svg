@@ -1,4 +1,5 @@
-<svg viewBox="0 0 117.8 117.8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="117.800049" height="117.800049" fill="none" customFrame="#000000">
+<svg viewBox="0 0 117.8 117.8" xmlns="http://www.w3.org/2000/svg" width="117.800049" height="117.800049" fill="none"
+     customFrame="#000000">
 	<defs>
 		<linearGradient id="paint_linear_0" x1="58.9000206" x2="58.9000206" y1="-3.60658497e-15" y2="117.800003" gradientUnits="userSpaceOnUse">
 			<stop stop-color="rgb(235,131,130)" offset="0" stop-opacity="1" />

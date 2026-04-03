@@ -1,4 +1,4 @@
-import {PlanCardModel} from '../../core/models/plan-card.model';
+import { PlanCardModel } from '../../core/models/plan-card.model';
 
 export const PLAN_CARDS: PlanCardModel[] = [
   {
@@ -9,8 +9,8 @@ export const PLAN_CARDS: PlanCardModel[] = [
       '2 GB of storage',
       'Email support',
       'Help center access',
-      '1 users included'
-    ]
+      '1 users included',
+    ],
   },
   {
     title: 'Standard',
@@ -20,8 +20,8 @@ export const PLAN_CARDS: PlanCardModel[] = [
       '2 GB of storage',
       'Email support',
       'Help center access',
-      '15 users included'
-    ]
+      '15 users included',
+    ],
   },
   {
     title: 'Premium',
@@ -31,7 +31,7 @@ export const PLAN_CARDS: PlanCardModel[] = [
       '2 GB of storage',
       'Email support',
       'Help center access',
-      '20 users included'
-    ]
-  }
-]
+      '20 users included',
+    ],
+  },
+];

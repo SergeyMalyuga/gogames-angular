@@ -1,11 +1,19 @@
-@use "./styles/variables" as variables;
-@use "./styles/fonts";
+@use './styles/variables' as variables;
+@use './styles/fonts';
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -83,7 +91,8 @@ body {
 }
 
 @keyframes flying {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(0.87) translateY(0);
   }
 

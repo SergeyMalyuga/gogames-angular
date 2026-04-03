@@ -2,7 +2,7 @@
 
 .about-platforms {
   padding: 67px 0 92px;
-  background-image: url("/assets/images/raster/about-platforms-bg.jpg");
+  background-image: url('/assets/images/raster/about-platforms-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -61,11 +61,11 @@
       }
     }
 
-    &--gear-big, &--gear-small {
+    &--gear-big,
+    &--gear-small {
       position: absolute;
       animation: rotation 6.5s infinite linear reverse;
     }
-
 
     &--gear-big {
       top: 10%;

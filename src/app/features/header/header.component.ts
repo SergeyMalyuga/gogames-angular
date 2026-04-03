@@ -1,15 +1,12 @@
-import {ChangeDetectionStrategy, Component, DestroyRef, effect, inject, OnInit, signal} from '@angular/core';
-import {LINKS} from './data/links.data';
-import {LinkComponent} from '../../shared/components/link/link.component';
-import {ScreenService} from '../../core/services/screen.service';
-import {BodyService} from '../../core/services/body.service';
-import {takeUntilDestroyed, toObservable} from '@angular/core/rxjs-interop';
+import { ChangeDetectionStrategy, Component, effect, inject, signal } from '@angular/core';
+import { LINKS } from './data/links.data';
+import { LinkComponent } from '../../shared/components/link/link.component';
+import { ScreenService } from '../../core/services/screen.service';
+import { BodyService } from '../../core/services/body.service';
 
 @Component({
   selector: 'app-header',
-  imports: [
-    LinkComponent
-  ],
+  imports: [LinkComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -26,7 +23,7 @@ export class HeaderComponent {
       const isTablet = this.screenService.isTablet();
 
       if (!isTablet) {
-        this.isNavOpen.set(false)
+        this.isNavOpen.set(false);
         this.bodyService.setOverflow(false);
       }
     });

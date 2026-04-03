@@ -1,7 +1,5 @@
-import {LinkModel} from '../models/link.model';
-
 export enum AppRoute {
-  MAIN = ''
+  MAIN = '',
 }
 
 export enum LinkType {

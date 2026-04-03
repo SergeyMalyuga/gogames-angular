@@ -64,12 +64,12 @@
     transition: color 0.3s ease;
 
     &::before {
-      content: "";
+      content: '';
       display: block;
       width: 14px;
       height: 10px;
       background-color: variables.$checkmark-bg;
-      mask-image: url("/assets/images/vector/price-checmark.svg");
+      mask-image: url('/assets/images/vector/price-checmark.svg');
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: cover;
@@ -83,7 +83,7 @@
 
   &__active {
     color: variables.$white;
-    background-image: url("/assets/images/raster/plan-card-bg-active.jpg");
+    background-image: url('/assets/images/raster/plan-card-bg-active.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -101,14 +101,14 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       display: block;
       top: 23px;
       right: 23px;
       width: 46px;
       height: 46px;
-      background-image: url("/assets/images/raster/price-active-card.png");
+      background-image: url('/assets/images/raster/price-active-card.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;

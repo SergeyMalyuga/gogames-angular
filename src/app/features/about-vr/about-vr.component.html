@@ -1,18 +1,33 @@
 <section class="about-vr">
   <div class="about-vr__content container">
     <div class="about-vr__wrapper-image">
-      <img class="about-vr__image" src="/assets/images/vector/about-vr-game-men.svg" width="557" height="572" alt=""
-           loading="lazy">
-      <img class="about-vr__image about-vr__image--screen" src="/assets/images/raster/about-vr-screen.png" width="289"
-           height="389" alt="" loading="lazy">
+      <img
+        class="about-vr__image"
+        src="/assets/images/vector/about-vr-game-men.svg"
+        width="557"
+        height="572"
+        alt=""
+        loading="lazy"
+      />
+      <img
+        class="about-vr__image about-vr__image--screen"
+        src="/assets/images/raster/about-vr-screen.png"
+        width="289"
+        height="389"
+        alt=""
+        loading="lazy"
+      />
     </div>
     <div class="about-vr__wrapper-info">
       <h2 class="about-vr__title section-title">About VR Glasses</h2>
       <p class="about-vr__subtitle section-subtitle">The New VR Glasses Series</p>
-      <p class="section-text">It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed.</p>
+      <p class="section-text">
+        It is a long established fact that a reader will be distracted by the readable content of a
+        page when looking at its layout. The point of using Lorem Ipsum is that it has a
+        more-or-less normal distribution of letters as opposed.
+      </p>
       @for (link of LINKS_DATA.button; track link.text) {
-        <app-link class="about-vr__link" [link]="link"/>
+        <app-link class="about-vr__link" [link]="link" />
       }
     </div>
   </div>

@@ -24,10 +24,7 @@
       display: block;
       width: 0;
       height: 2px;
-      background: linear-gradient(
-          to right,
-          variables.$ocean-blue,
-          variables.$lavender);
+      background: linear-gradient(to right, variables.$ocean-blue, variables.$lavender);
       transition: width 0.5s ease;
     }
 
@@ -55,11 +52,16 @@
         to right,
         variables.$ocean-blue,
         variables.$ocean-blue,
-        variables.$lavender) right  / 200% auto;
-    transition: background-position 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
+        variables.$lavender
+      )
+      right / 200% auto;
+    transition:
+      background-position 0.5s ease,
+      opacity 0.5s ease,
+      box-shadow 0.5s ease;
 
     &:hover {
-    background-position: left;
+      background-position: left;
       box-shadow: 0 3px 10px 0 #9b9b9b;
     }
 

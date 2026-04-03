@@ -1,13 +1,15 @@
-<article class="plan-card" [ngClass]="{'plan-card__active': card.title === activeCard?.title}">
+<article class="plan-card" [ngClass]="{ 'plan-card__active': card.title === activeCard?.title }">
   <h2 class="plan-card__title">{{ card.title }}</h2>
-  <data class="plan-card__price" value="{{card.price}}">
-    <span class="plan-card__currency">$</span>{{card.price.toFixed(2)}}<span class="plan-card__per"> / Per Hour</span></data>
+  <data class="plan-card__price" value="{{ card.price }}">
+    <span class="plan-card__currency">$</span>{{ card.price.toFixed(2)
+    }}<span class="plan-card__per"> / Per Hour</span></data
+  >
   <ul class="plan-card__list-benefits">
     @for (item of card.benefits; track item) {
       <li class="plan-card__benefit">{{ item }}</li>
     }
     @for (link of LINKS_DATA.button; track link.text) {
-      <app-link [link]="link" (click)="onClick()"/>
+      <app-link [link]="link" (click)="onClick()" />
     }
   </ul>
 </article>
