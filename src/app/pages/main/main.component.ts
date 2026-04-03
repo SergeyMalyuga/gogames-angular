@@ -4,6 +4,7 @@ import {HeroComponent} from '../../features/hero/hero.component';
 import {AboutVrComponent} from '../../features/about-vr/about-vr.component';
 import {AboutPlatformsComponents} from '../../features/about-platforms/about-platforms.components';
 import {PriceComponent} from '../../features/price/price.component';
+import {FooterComponent} from '../../features/footer/footer.component';
 
 @Component({
   selector: 'app-main',
@@ -12,7 +13,8 @@ import {PriceComponent} from '../../features/price/price.component';
     HeroComponent,
     AboutVrComponent,
     AboutPlatformsComponents,
-    PriceComponent
+    PriceComponent,
+    FooterComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
