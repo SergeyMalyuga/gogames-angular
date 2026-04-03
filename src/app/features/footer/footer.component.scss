@@ -1,1 +1,83 @@
 @use '../../../styles/variables' as variables;
+
+.footer {
+  background-color: variables.$bg-main;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+
+    @media (width <= 768px) {
+      gap: 20px;
+    }
+  }
+
+  &__copyright {
+    small {
+      color: variables.$text-color;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: left;
+    }
+
+    @media (width <= 883px) {
+      order: 1;
+      margin: 0 auto;
+      text-align: center;
+
+    }
+
+    @media (width <= 768px) {
+      small {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 18px;
+
+    @media (width <= 473px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__link {
+    &-social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      color: variables.$link-text;
+      background-color: variables.$link-bg;
+      transition: background-color 0.5s ease, color 0.5s ease;
+
+      svg {
+        display: block;
+      }
+
+      &:hover {
+        background-color: variables.$lavender-gray;
+        color: variables.$link-text-hover;
+      }
+    }
+
+    &-logo {
+      display: block;
+
+      img {
+        display: block;
+      }
+
+      @media (width <= 473px) {
+        margin: 0 auto;
+      }
+    }
+  }
+}
